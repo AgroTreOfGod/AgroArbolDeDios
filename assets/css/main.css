@@ -1,5 +1,5 @@
 section.home {
-  background-image: url(../img/fondohome.jpg);
+  background-image: url(../img/fondohome.webp);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -101,7 +101,7 @@ section.home {
 section.about {
   width: 100%;
   min-height: 90vh;
-  padding-top: 10vh;
+  padding-top: 8rem;
 }
 
 .min-title-about {
@@ -261,6 +261,7 @@ section.about {
 .productos {
   width: 80%;
   margin: 25vh auto 0 auto;
+  padding-top: 3rem;
 }
 
 .container-prod {
@@ -321,4 +322,91 @@ section.about {
   font-weight: 800;
   color: #0a7c12;
   font-size: 1rem;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 35%;
+  z-index: 888;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.slick-arrow i {
+  font-size: 1.5rem;
+  color: #12357e;
+}
+
+.slick-prev  {
+  left: 1px;
+}
+
+.slick-next {
+  right: 1px;
+}
+
+.ubicacion .title{
+  width: 60%;
+  margin: 1.5vh auto 1vh auto;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 800;
+  color: #12357e;
+  font-size: 2rem;
+  line-height: 1.9rem;
+  margin-top: 20px;
+}
+
+.ubicacion .direccion{
+  width: 100%;
+  text-align: center;
+  color: #12357e;
+  font-size: 1.2rem;
+  margin-bottom: 8vh;
+  
+}
+.ubicacion .mapa iframe{
+  width: 100%;
+  height: 80vh;
+}
+
+.ubicacion .mapa{
+  box-shadow: 0 0.5vh 3vh #a7a7a7;
+}
+
+.ubicacion{
+  padding: 25px 0;
+  margin-bottom: 50px;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.ubicacion i{
+    text-decoration: none;
+    color: red;
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+    margin-left: 47%;
+    box-shadow: 0 0.5vh 3vh #a7a7a7;
+}
+
+.ubicacion i:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .ubicacion i{
+    margin-left: 45.5%;
+  }
 }

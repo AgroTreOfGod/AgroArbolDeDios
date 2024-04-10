@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agro Tree of God</title>
+    <title>Agro árbol de Dios</title>
+
+
+    <link rel="icon" href="assets/img/Logo.png">
 
     <!--======= ESTILOS ========-->
     <link rel="stylesheet" href="assets/css/general.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/stylosfooter.css" />
-
-    <link rel="icon" href="assets/img/LogoAgro.ico">
 
     <!--======= CDN, ICON =======-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -23,6 +24,7 @@
       src="https://kit.fontawesome.com/77f4164fa6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
 
   <body>
@@ -30,31 +32,31 @@
       <nav class="nav container">
         <a href="#" class="nav_logo">
           <img
-            src="assets/img/LogoAgro.png"
+            src="assets/img/Logo.png"
             alt="Logotipo Agro Tree of God"
-          />Agro Tree of God
+          />Agro Árbol de Dios
         </a>
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_linkInicio">Inicio</a>
+              <a href="#inicio" class="nav_linkInicio"  onclick="abrircerrarmenu()">Inicio</a>
             </li>
 
             <li class="nav_item">
-              <a href="#info" class="nav_link">Beneficios</a>
+              <a href="#sobre-nosotros" class="nav_link"  onclick="abrircerrarmenu()">Sobre nosotros</a>
             </li>
 
             <li class="nav_item">
-              <a href="#nosotros" class="nav_link">Nosotros</a>
+              <a href="#productos" class="nav_link"  onclick="abrircerrarmenu()">Productos</a>
             </li>
 
             <li class="nav_item">
-              <a href="#productos" class="nav_link">Productos</a>
+              <a href="#ubication" class="nav_link"  onclick="abrircerrarmenu()">Ubicacion</a>
             </li>
 
             <li class="nav_item">
-              <a href="#ubicacion" class="nav_link">Ubicacion y contacto</a>
+              <a href="#contacto" class="nav_link"  onclick="abrircerrarmenu()">Contacto</a>
             </li>
           </ul>
 
@@ -66,7 +68,7 @@
         </div>
 
         <div class="nav_actions">
-          
+     
           <!--boton toggle-->
           <div class="nav_toggle" id="nav-toggle" onclick="abrircerrarmenu()">
             <i class="ri-menu-line" id="icon"></i>
@@ -76,13 +78,13 @@
     </header>
 
     <main>
-      <section class="home" id="home">
+      <section class="home" id="inicio">
         <div class="texthome">
           <h1 data-aos="fade-right">
             Ofreciendo la Mejor Calidad de Limón y Mango en El Guamo, Tolima
           </h1>
           <p data-aos="fade-right">
-            En <span>Agro ÁRBOL DE DIOS</span> nos dedicamos con pasión a cultivar
+            En <span>Agro Árbol de Dios</span> nos dedicamos con pasión a cultivar
             limón Tahití, limón común, mango tommy y otros productos de calidad
             superior.
           </p>
@@ -92,7 +94,7 @@
         </div>
       </section>
 
-      <section class="about" id="info">
+      <section class="about" id="sobre-nosotros">
         <div class="text-about" data-aos="fade-up">
           <p class="min-title-about">Beneficios</p>
           <h2 class="title-about">¡Descubre los beneficios increíbles!</h2>
@@ -127,11 +129,11 @@
 
         <div class="info" data-aos="fade-up">
           <figure class="img-info">
-            <img src="assets/img/img-info.jpg" alt="Canasta de limón" />
+            <img src="assets/img/img-info.webp" alt="Canasta de limón" />
           </figure>
           <div class="text-info">
             <div class="text-about" data-aos="fade-up">
-              <p class="min-title-about" id="nosotros">Nosotros</p>
+              <p class="min-title-about">Nosotros</p>
               <h2 class="title-about">¡Conócenos mas de cerca!</h2>
             </div>
             <p id="parr-info">
@@ -147,7 +149,7 @@
         </div>
       </section>
 
-      <section class="productos" data-aos="fade-up" id="productos">
+      <section class="productos" id="productos" data-aos="fade-up">
         <div class="text-about">
           <p class="min-title-about">Productos</p>
           <h2 class="title-about">
@@ -156,7 +158,7 @@
         </div>
 
         <div class="container-prod">
-          <div class="item-prod"  onclick="limontahiti()">
+          <div class="item-prod">
             <img
               src="https://exitocol.vtexassets.com/arquivos/ids/19213539/LIMON-TAHITI-UNIDAD-706500_a.jpg?v=638249818091230000"
               alt="Limon Tahití"
@@ -164,7 +166,7 @@
             <p>Limón Tahití</p>
           </div>
 
-          <div class="item-prod"  onclick="limonyulima()">
+          <div class="item-prod">
             <img
               src="https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/1/8/189_32.jpg"
               alt="Limon Yulima"
@@ -172,7 +174,7 @@
             <p>Limón Yulima</p>
           </div>
 
-          <div class="item-prod"  onclick="mangotommy()">
+          <div class="item-prod"  >
             <img
               src="https://exitocol.vtexassets.com/arquivos/ids/19213584/MANGO-TOMMY-UNIDAD-804861_a.jpg?v=638249820059200000"
               alt="Mango Tommy"
@@ -183,16 +185,27 @@
       </section>
     </main>
 
-    <footer class="pie-pagina" id="ubicacion">
+  <div class="ubicacion" id="ubication">
+    <i class="fa-solid fa-location-dot"></i>
+    <p class="title">Nuestra ubicacion</p>
+    <p class="direccion">Guamo - Tolima, Manzana C casa 2 las acacias</p>
+    <div class="mapa">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3979.9372806607207!2d-74.97993482502457!3d4.033221395940527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMDEnNTkuNiJOIDc0wrA1OCczOC41Ilc!5e0!3m2!1ses!2sco!4v1712700079863!5m2!1ses!2sco" 
+      width="600" height="450" style="border:0;" allowfullscreen="" 
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+    <footer class="pie-pagina" id="contacto">
       <div class="grupo-1">
         <div class="box">
           <figure>
             <img
-              src="assets/img/Icono.png"
-              alt="Logo de la empresa Agro Tree of God"
-            />
-            <a href=""><i class="fa-solid fa-location-dot"></i></a>
-            <p>Guamo - Tolima via san luis</p>
+              src="assets/img/TreeOfGod.png"
+              alt="Logo de la empresa Agro Tree of God"/>
+            <a href="#ubication"><i class="fa-solid fa-location-dot"></i></a>
+            <p>Guamo - Tolima, Manzana C casa 2 las acacias</p>
           </figure>
         </div>
         <div class="box">
@@ -209,38 +222,62 @@
             </div>
             <div class="red-social">
               <p>- En nuestras redes sociales</p>
-              <a href="https://www.facebook.com/profile.php?id=61556800480818&mibextid=ZbWKwL" class="fa fa-facebook" style="margin-left: 20px"></a>
-              <a href="#" class="fa fa-instagram"></a>
-    
+              <a href="#https://www.facebook.com/profile.php?id=61556800480818&mibextid=ZbWKwL" class="fa fa-facebook" style="margin-left: 20px"></a>
             </div>
             <div class="contacts">
               <div class="whatsApp">
                 <p>
-                  <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span
-                  ><br />
-                  +57 3143260589 - 3123655661
+                  <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span><br />
+                  +57 314 3260589
                 </p>
               </div>
               <div class="telefono">
                 <p>
                   <i class="fa-solid fa-phone"></i><span>Llamadas</span><br />
-                  +57 3143260589 - 3123655661
+                  +57 312 3655661
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="box">
+        <!-- <div class="box">
           <div class="form-message">
-           
+            <p>O envianos tu mensaje</p>
           </div>
-          
-        </div>
+          <form action="" method="post" class="formulario">
+            <input
+              type="nombre"
+              placeholder="Escribe tu nombre *"
+              id="nombre"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Escribe tu email *"
+              id="email"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Escribe tu telefono(Opcional)"
+              id="telefono"
+            />
+            <textarea
+              name="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe aquí tu mensaje *"
+              required
+            ></textarea>
+            <input type="submit" value="ENVIAR" class="enviar" />
+          </form>
+        </div> -->
       </div>
       <hr />
       <div class="grupo-2">
         <small
-          >&copy; 2024 <b>Agro Tree of God</b> - Todos los derechos
+          >&copy; 2024 <b>Agro Árbol de Dios </b> - Todos los derechos
           reservados</small
         >
       </div>
@@ -258,6 +295,21 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      function slick() {
+          if (window.innerWidth < 650) {
+              $('.container-prod').slick();
+              document.querySelector(".slick-prev").innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+              document.querySelector(".slick-next").innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+          }
+      }
+      // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+      window.onload = slick;
+      window.onresize = slick;
     </script>
   </body>
 </html>
